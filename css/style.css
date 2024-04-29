@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: url('../assets/starry-sky-2675322_1280.jpg') repeat 0 0;
+    animation: stars 10s linear infinite;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+@keyframes stars {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+body {
+    background-color: #15202B; /* Azul marino */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #15202B; /* Azul marino */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #15202B; /* Azul marino */
+    color: #000000; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background: rgba(249, 198, 214, 1); /* Color rosa */
+    border: 1px solid #020202; /* Borde azul medio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #000000; /* Borde azul medio */
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    display: block;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.name {
+    display: none;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #f6c90e; /* Color amarillo dorado */
+    font-weight: bold;
+}
+
+.card.clicked .name {
+    display: block;
+}
+
+.card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
+
+#special-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+#message {
+    position: absolute;
+    top: 175px; /* Ajusta la posición vertical del mensaje */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(249, 198, 214);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 1, 1, 0.1);
+    display: none;
+    color: #333;
+    size: 300px;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle Especial</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    /* Estilos adicionales si los necesitas */
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* Mover el canvas detrás de otros elementos */
+    }
+</style>
+</head>
+<body>
+    <div class="card" id="special-card">
+        <p><b>¡Hola Adi!</b></p>
+        <p>Este mensaje es para ti. <br> 
+            Da click en esta carta para ver lo que dice.</p>
+    </div>
+
+    <canvas id="flowerCanvas" width="400" height="400"></canvas>
+    <canvas id="tulipCanvas" width="400" height="400"></canvas>
+    <div id="message"><b>Ten un lindo día</b></div>
+
+    
+    <script src="../views/script/effects.js"></script>
+</body>
+</html>
